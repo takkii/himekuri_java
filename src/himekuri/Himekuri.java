@@ -5,9 +5,12 @@
  */
 package himekuri;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 /**
  *
- * @author sudok
+ * @author Takayuki Kamiyama.
  */
 public class Himekuri {
 
@@ -15,7 +18,12 @@ public class Himekuri {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年 MM月 dd日 mm分 ss秒"); 
+       
+        Calendar cal = Calendar.getInstance();
+        
+        System.out.println(sdf.format(cal.getTime()));
     }
     
 }
