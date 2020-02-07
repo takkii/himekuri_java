@@ -6,6 +6,7 @@
 package himekuri;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 
 /**
@@ -19,11 +20,19 @@ public class Himekuri {
      */
     public static void main(String[] args) {
         
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年 MM月 dd日 mm分 ss秒"); 
-       
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日mm分ss秒");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("年MM月dd日");
+        SimpleDateFormat sdf3 = new SimpleDateFormat(".MM.dd");
+        
+        LocalDateTime d = LocalDateTime.now();
+        
         Calendar cal = Calendar.getInstance();
+        String reiwa = "令和";
+        String r = "R";
+        
         
         System.out.println(sdf.format(cal.getTime()));
+        System.out.println(reiwa + (d.getYear()-2018) + sdf2.format(cal.getTime()) + " : " + (r + (d.getYear()-2018) +sdf3.format(cal.getTime())));
     }
     
 }
