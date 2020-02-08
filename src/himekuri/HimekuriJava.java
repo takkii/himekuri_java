@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *  Copyright © 2020 Takayuki, Kamiyama
  */
 package himekuri;
 
@@ -13,13 +11,9 @@ import java.util.Calendar;
 
 /**
  *
- * @author Takayuki Kamiyama.
+ * @author Takayuki, Kamiyama
  */
-public class Himekuri {
-
-    /**
-     * @param args the command line arguments
-     */
+public class HimekuriJava {
     public static void main(String[] args) {
         
         try{
