@@ -9,14 +9,9 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
-/**
- *
- * @author takkii(Takayuki Kamiyama)
- */
-public class HimekuriJava {
-    public static void main(String[] args) {
-        
-        try{
+class Juke{
+    public void himekuri(){
+        try {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日mm分ss秒");
         SimpleDateFormat sdf2 = new SimpleDateFormat("年MM月dd日");
         SimpleDateFormat sdf3 = new SimpleDateFormat(".MM.dd");
@@ -47,5 +42,13 @@ public class HimekuriJava {
             System.out.println(himekuriVersion);
         }
     }
-    
+}/**
+ *
+ * @author takkii(Takayuki Kamiyama)
+ */
+public class HimekuriJava {
+    public static void main(String[] args) {
+        Juke obj = new Juke();
+        obj.himekuri();
+    }
 }
