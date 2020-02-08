@@ -17,24 +17,24 @@ import java.time.temporal.ChronoUnit;
 class Juke{
     public void himekuri(){
         try {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日mm分ss秒");
-        SimpleDateFormat sdf2 = new SimpleDateFormat("年MM月dd日");
-        SimpleDateFormat sdf3 = new SimpleDateFormat(".MM.dd");
+        SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日mm分ss秒");
+        SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
+        SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
         
         LocalDateTime d = LocalDateTime.now();
         
         Calendar cal = Calendar.getInstance();
         
-        LocalDate date1 = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
-        LocalDate date2 = LocalDate.of(2021, 1, 1);
+        LocalDate date_before = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
+        LocalDate date_after = LocalDate.of(2021, 1, 1);
         
-        long datediff = ChronoUnit.DAYS.between(date1,date2);
-        String reiwa = "令和";
-        String r = "R";
+        long datediff = ChronoUnit.DAYS.between(date_before,date_after);
+        String reiwa_kanji = "令和";
+        String reiwa_alpha = "R";
         
-        System.out.println(sdf.format(cal.getTime()));
+        System.out.println(sdf_koyomi.format(cal.getTime()));
         System.out.println("来年の1月1日まであと：" + datediff + "日です。");
-        System.out.println(reiwa + (d.getYear()-2018) + sdf2.format(cal.getTime()) + ":" + (r + (d.getYear()-2018) +sdf3.format(cal.getTime())));
+        System.out.println(reiwa_kanji + (d.getYear()-2018) + sdf_nengo.format(cal.getTime()) + ":" + (reiwa_alpha + (d.getYear()-2018) + sdf_kigo.format(cal.getTime())));
         
         }catch(Exception e){
             System.err.println("Exceptionエラーを捕捉しました...");
