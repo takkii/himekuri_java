@@ -28,7 +28,7 @@ class Juke{
         LocalDate date_before = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
         LocalDate date_after = LocalDate.of(2021, 1, 1);
         
-        long datediff = ChronoUnit.DAYS.between(date_before,date_after);
+        long datediff = ChronoUnit.DAYS.between(date_before, date_after);
         String reiwa_kanji = "令和";
         String reiwa_alpha = "R";
         
