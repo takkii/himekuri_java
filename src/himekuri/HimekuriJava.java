@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 /**
  *
- * @author Takayuki, Kamiyama
+ * @author takkii(Takayuki Kamiyama)
  */
 public class HimekuriJava {
     public static void main(String[] args) {
