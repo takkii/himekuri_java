@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
+// Juke is SubClass.
 class Juke{
     public void himekuri(){
         try {
@@ -42,12 +43,16 @@ class Juke{
             System.out.println(himekuriVersion);
         }
     }
-}/**
- *
+}
+
+/**
  * @author takkii(Takayuki Kamiyama)
+ * HimekuriJava is SuperClass.
  */
 public class HimekuriJava {
     public static void main(String[] args) {
+        
+        // SubClass call
         Juke obj = new Juke();
         obj.himekuri();
     }
