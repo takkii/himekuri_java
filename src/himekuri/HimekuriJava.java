@@ -26,14 +26,14 @@ class Juke{
         Calendar cal = Calendar.getInstance();
         
         LocalDate date_before = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
-        LocalDate date_after = LocalDate.of(2021, 1, 1);
+        LocalDate date_after = LocalDate.of(d.getYear() +1, 1, 1);
         
         long datediff = ChronoUnit.DAYS.between(date_before, date_after);
         String reiwa_kanji = "令和";
         String reiwa_alpha = "R";
         
         System.out.println(sdf_koyomi.format(cal.getTime()));
-        System.out.println("来年の1月1日まであと：" + datediff + "日です。");
+        System.out.println("来年の1月1日まであと：" + (datediff -1) + "日です。");
         System.out.println(reiwa_kanji + (d.getYear()-2018) + sdf_nengo.format(cal.getTime()) + ":" + (reiwa_alpha + (d.getYear()-2018) + sdf_kigo.format(cal.getTime())));
         
         }catch(Exception e){
