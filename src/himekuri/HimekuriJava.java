@@ -3,12 +3,6 @@
  */
 package himekuri;
 
-// 以下省略
-//import java.text.SimpleDateFormat;
-//import java.time.LocalDate;
-//import java.time.LocalDateTime;
-//import java.util.Calendar;
-//import java.time.temporal.ChronoUnit;
 import java.text.*;
 import java.util.*;
 import java.time.*;
@@ -23,7 +17,6 @@ class Juke{
         SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
         
         LocalDateTime d = LocalDateTime.now();
-        
         Calendar cal = Calendar.getInstance();
         
         LocalDate date_before = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
