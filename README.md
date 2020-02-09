@@ -29,7 +29,7 @@
 日めくりの数え番号：1.0.0
 ```
 
-[ out/out/artifacts/himekuri_java_jar ]
+[ out/artifacts/himekuri_java_jar ]
 
 ```markdown
 java -jar himekuri_java.jar
