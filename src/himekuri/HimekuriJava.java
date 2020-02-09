@@ -44,7 +44,7 @@ class Juke {
 class Tool {
     public void himekuri() {
         try {
-            String version = "1.0.0";
+            String version = "1.0.1";
             String himekuriVersion = "日めくりの数え番号：" + version;
             System.out.println(himekuriVersion);
         } catch (Exception ex) {
