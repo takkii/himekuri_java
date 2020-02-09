@@ -48,6 +48,7 @@ class Tool {
             String himekuriVersion = "日めくりの数え番号：" + version;
             System.out.println(himekuriVersion);
         } catch (Exception ex) {
+            System.err.println("Exceptionエラーを捕捉しました...");
             ex.printStackTrace(System.out);
         }
     }
