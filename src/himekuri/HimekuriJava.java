@@ -31,7 +31,7 @@ class Juke {
 
             System.out.println(sdf_koyomi.format(cal.getTime()));
             System.out.println("来年の1月1日まであと：" + (datediff - 1) + "日です。");
-            System.out.println(reiwa_beta + ":" + reiwa_delta);
+            System.out.println(reiwa_beta + "：" + reiwa_delta);
 
         } catch (Exception e) {
             System.err.println("Exceptionエラーを捕捉しました...");
