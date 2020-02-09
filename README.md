@@ -1,10 +1,10 @@
-### himekuri_java
+### himekuri_javaプロジェクト
 
 ![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)![GitHub release](https://img.shields.io/github/release/takkii/himekuri_java.svg?style=flat)
 
 **Java版、日めくり。**
 
-### 登録番号_1.0.0 
+### v1.0.0 
 
 ```markdown
 2020年02月08日19分02秒
@@ -13,7 +13,7 @@
 日めくりの数え番号：1.0.0
 ```
 
-### 登録番号_1.0.1
+### v1.0.1
 
 ```markdown
 2020年02月08日45分40秒
@@ -22,7 +22,7 @@
 日めくりの数え番号：1.0.0
 ```
 
-### 登録番号_1.0.2
+### v1.0.2
 
 ```markdown
 2020年02月09日30分00秒
@@ -37,7 +37,7 @@
 java -jar himekuri_java.jar
 ```
 
-### jarファイル実行後結果
+### jarファイル出力結果
 
 ```markdown
 2020年02月09日01分35秒
