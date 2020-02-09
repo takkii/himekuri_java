@@ -1,3 +1,5 @@
+![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)![GitHub release](https://img.shields.io/github/release/takkii/himekuri_java.svg?style=flat)
+
 # himekuri_java
 
 **javaで日めくり機能を作りました。**
