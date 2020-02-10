@@ -10,9 +10,13 @@ import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
 // Juke is SubClass.
-class Juke {
+class Juke extends Thread {
     public void himekuri() {
         try {
+            Juke thread = new Juke();
+            thread.setDaemon(true);
+            thread.start();
+
             SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日mm分ss秒");
             SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
             SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
@@ -32,6 +36,7 @@ class Juke {
             System.out.println(sdf_koyomi.format(cal.getTime()));
             System.out.println("来年の1月1日まであと：" + (datediff - 1) + "日です。");
             System.out.println(reiwa_beta + "：" + reiwa_delta);
+            thread.join();
 
         } catch (Exception e) {
             System.err.println("Exceptionエラーを捕捉しました...");
@@ -41,12 +46,17 @@ class Juke {
 }
 
 // Tool is SubClass
-class Tool {
+class Tool extends Thread {
     public void himekuri() {
         try {
+            Tool thread = new Tool();
+            thread.start();
+
             String version = "1.0.1";
             String himekuriVersion = "日めくりの数え番号：" + version;
             System.out.println(himekuriVersion);
+
+            thread.join();
         } catch (Exception ex) {
             System.err.println("Exceptionエラーを捕捉しました...");
             ex.printStackTrace(System.out);
