@@ -66,7 +66,8 @@ class Tool extends Thread {
 
 /**
  * @author takkii(Takayuki Kamiyama)
- * HimekuriJava is SuperClass.
+ * App is SuperClass.
+ * mvn build.
  */
 public class App {
     public static void main(String[] args) {
