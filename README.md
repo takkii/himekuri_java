@@ -4,6 +4,14 @@
 
 **Java版、日めくり。**
 
+### mvn 対応
+
+```markdown
+mvn compile 
+
+java -cp target/classes/ himekuri.App
+```
+
 ### v1.0.0 
 
 ```markdown
