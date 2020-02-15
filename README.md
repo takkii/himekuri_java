@@ -81,4 +81,10 @@ java -jar himekuri_java.jar
 日めくりの数え番号：1.0.1
 ```
 
+### target
+
+```markdown
+java -jar himekuri_java-1.0-SNAPSHOT.jar
+```
+
 ### バージョン毎に出力結果でした。
