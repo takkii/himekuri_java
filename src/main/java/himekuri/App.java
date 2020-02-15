@@ -10,10 +10,10 @@ import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
 // Juke is SubClass.
-class Juke extends Thread {
+class Ruco extends Thread {
     public void himekuri() {
         try {
-            final Juke thread = new Juke();
+            final Ruco thread = new Ruco();
             thread.setDaemon(true);
             thread.start();
 
@@ -46,10 +46,10 @@ class Juke extends Thread {
 }
 
 // Tool is SubClass
-class Tool extends Thread {
+class Seel extends Thread {
     public void himekuri() {
         try {
-            final Tool thread = new Tool();
+            final Seel thread = new Seel();
             thread.start();
 
             final String version = "1.0.1";
@@ -71,11 +71,11 @@ public class App {
     public static void main(final String[] args) {
 
         // SubClass call
-        final Juke obj = new Juke();
+        final Ruco obj = new Ruco();
         obj.himekuri();
 
         // SubClass call
-        final Tool objc = new Tool();
+        final Seel objc = new Seel();
         objc.himekuri();
     }
 }
