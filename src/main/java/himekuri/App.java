@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
-// Juke is SubClass.
+// Ruco is SubClass.
 class Ruco extends Thread {
     public void himekuri() {
         try {
@@ -45,7 +45,7 @@ class Ruco extends Thread {
     }
 }
 
-// Tool is SubClass
+// Seel is SubClass
 class Seel extends Thread {
     public void himekuri() {
         try {
