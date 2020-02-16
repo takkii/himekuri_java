@@ -87,4 +87,14 @@ java -jar himekuri_java.jar
 java -jar himekuri_java-1.0-SNAPSHOT.jar
 ```
 
+### GitHub Package からダウンロード
+
+```markdown
+himekuri_java-1.0-20200215.101152-2.jar
+
+cd ダウンロード先
+
+java -jar himekuri_java-1.0-20200215.101152-2.jar
+```
+
 ### バージョン毎に出力結果でした。
