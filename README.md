@@ -12,7 +12,7 @@ mvn compile
 java -cp target/classes/ himekuri.App
 ```
 
-### mvn build
+### mvn 出力結果
 
 ```markdown
 2020年02月15日11時39分57秒
