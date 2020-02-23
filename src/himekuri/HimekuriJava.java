@@ -30,8 +30,8 @@ class Juke extends Thread {
             final long datediff = ChronoUnit.DAYS.between(date_before, date_after);
             final String reiwa_kanji = "令和";
             final String reiwa_alpha = "R";
-            final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
-            final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
+            final String reiwa_beta = reiwa_kanji + (d.getYear() - 2018) + sdf_nengo.format(cal.getTime());
+            final String reiwa_delta = reiwa_alpha + (d.getYear() - 2018) + sdf_kigo.format(cal.getTime());
 
             System.out.println(sdf_koyomi.format(cal.getTime()));
             System.out.println("来年の1月1日まであと：" + (datediff - 1) + "日です。");
