@@ -11,13 +11,13 @@ import java.util.Calendar;
 
 // Juke is SubClass.
 class Juke extends Thread {
-    public void himekuri() {
+    void himekuri() {
         try {
             final Juke thread = new Juke();
             thread.setDaemon(true);
             thread.start();
 
-            final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒");
+            final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒 EEEE");
             final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
             final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
 
@@ -47,7 +47,7 @@ class Juke extends Thread {
 
 // Tool is SubClass
 class Tool extends Thread {
-    public void himekuri() {
+    void himekuri() {
         try {
             final Tool thread = new Tool();
             thread.start();
