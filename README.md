@@ -66,6 +66,15 @@ java -cp target/classes/ himekuri.App
 日めくりの数え番号：1.0.1
 ```
 
+### v1.0.6
+
+```
+2020年02月23日14時41分41秒 日曜日
+来年の1月1日まであと：312日です。
+令和2年02月23日：R2.02.23
+日めくりの数え番号：1.0.1
+```
+
 ### out/artifacts/himekuri_java_jar
 
 ```markdown
