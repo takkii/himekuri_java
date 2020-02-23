@@ -68,7 +68,7 @@ class Tool extends Thread {
  * @author takkii(Takayuki Kamiyama) HimekuriJava is SuperClass.
  */
 public class HimekuriJava {
-    public static void main(final String[] args) {
+    public static void main(final String... args) {
 
         // SubClass call
         final Juke obj = new Juke();
