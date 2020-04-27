@@ -78,10 +78,10 @@ java -cp target/classes/ himekuri.App
 ### GitHub_Head
 
 ```markdown
-2020年04月27日18時24分51秒：月曜日
+2020年04月27日18時34分05秒：月曜日
 来年の1月1日まであと：248日です。
 令和2年04月27日：R2.04.27
-日めくりの数え番号：1.0.1
+日めくりの数え番号：1.0.2
 ```
 
 ### out/artifacts/himekuri_java_jar
