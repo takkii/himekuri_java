@@ -1,5 +1,5 @@
 /*
- *  Copyright © 2020 Takayuki, Kamiyama
+ *  Copyright © 2020 takkii(Takayuki Kamiyama)
  */
 package himekuri;
 
