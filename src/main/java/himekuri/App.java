@@ -17,7 +17,7 @@ class Ruco extends Thread {
             thread.setDaemon(true);
             thread.start();
 
-            final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒");
+            final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒：EEEE");
             final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
             final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
 
