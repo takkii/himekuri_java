@@ -84,6 +84,15 @@ java -cp target/classes/ himekuri.App
 日めくりの数え番号：1.0.2
 ```
 
+### GitHub head
+
+```markdown
+2020年07月06日14時54分20秒：月曜日
+来年の1月1日まであと：178日です。
+令和2年07月06日：R2.07.06
+日めくりの数え番号：1.0.2
+```
+
 ### out/artifacts/himekuri_java_jar
 
 ```markdown
