@@ -25,11 +25,13 @@ class Ruco extends Thread {
         } catch (final Exception e) {
             System.err.println("Exceptionエラーを捕捉しました...");
             e.printStackTrace(System.out);
+        } finally {
+            final SimpleDateFormat sdf_koyomi = null;
+            final Calendar cal = null;
         }
     }
 }
 
-// Counter is SubClass
 class Counter extends Thread {
     public void Reiwa_Counter() {
         try {
@@ -51,11 +53,19 @@ class Counter extends Thread {
         } catch (final Exception ee) {
             System.err.println("Exceptionエラーを捕捉しました...");
             ee.printStackTrace(System.out);
+        } finally {
+            final LocalDateTime d = null;
+            final SimpleDateFormat sdf_nengo = null;
+            final SimpleDateFormat sdf_kigo = null;
+            final Calendar cal = null;
+            final String reiwa_kanji = null;
+            final String reiwa_alpha = null;
+            final String reiwa_beta = null;
+            final String reiwa_delta = null;
         }
     }
 }
 
-// Hizuke is SubClass
 class Hizuke extends Thread {
     public void Hizuke_counter() {
         try {
@@ -65,14 +75,19 @@ class Hizuke extends Thread {
             final LocalDateTime d = LocalDateTime.now();
             final LocalDate date_before = LocalDate.of(d.getYear(), d.getMonth(), d.getDayOfMonth());
             final LocalDate date_after = LocalDate.of(d.getYear() + 1, 1, 1);
-
             final long datediff = ChronoUnit.DAYS.between(date_before, date_after);
+
             System.out.println("来年の1月1日まであと：" + (datediff - 1) + "日です。");
 
             thread.join();
         } catch (final Exception eee) {
             System.err.println("Exceptionエラーを捕捉しました...");
             eee.printStackTrace(System.out);
+        } finally {
+            final LocalDateTime d = null;
+            final LocalDate date_before = null;
+            final LocalDate date_after = null;
+            final long datediff = 0L;
         }
     }
 }
@@ -93,6 +108,9 @@ class Seel extends Thread {
         } catch (final Exception ex) {
             System.err.println("Exceptionエラーを捕捉しました...");
             ex.printStackTrace(System.out);
+        } finally {
+            final String version = null;
+            final String himekuriVersion = null;
         }
     }
 }
@@ -100,8 +118,6 @@ class Seel extends Thread {
 /**
  * @author takkii(Takayuki Kamiyama) App is SuperClass. mvn build.
  */
-
-// App is SuperClass
 public class App {
     public static void main(final String[] args) {
 
