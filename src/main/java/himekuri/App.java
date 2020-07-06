@@ -23,8 +23,6 @@ class Ruco extends Thread {
 
             System.out.println(sdf_koyomi.format(cal.getTime()));
 
-            final SimpleDateFormat sdf_koyomi = null;
-            final Calendar cal = null;
             thread.join();
 
         } catch (final Exception e) {
@@ -51,16 +49,6 @@ class Counter extends Thread {
             thread.start();
 
             System.out.println(reiwa_beta + "：" + reiwa_delta);
-
-            final LocalDateTime d = null;
-            final SimpleDateFormat sdf_nengo = null;
-            final SimpleDateFormat sdf_kigo = null;
-            final Calendar cal = null;
-            final String reiwa_kanji = null;
-            final String reiwa_alpha = null;
-            final String reiwa_beta = null;
-            final String reiwa_delta = null;
-
             thread.join();
 
         } catch (final Exception ee) {
@@ -83,12 +71,6 @@ class Hizuke extends Thread {
 
             System.out.println("来年の1月1日まであと：" + (datediff - 1) + "日です。");
 
-            final LocalDateTime d = null;
-            final LocalDate date_before = null;
-            final LocalDate date_after = null;
-            final long datediff = 0L;
-
-
             thread.join();
         } catch (final Exception eee) {
             System.err.println("Exceptionエラーを捕捉しました...");
@@ -109,9 +91,6 @@ class Seel extends Thread {
             thread.start();
 
             System.out.println(himekuriVersion);
-            final String version = null;
-            final String himekuriVersion = null;
-
 
             thread.join();
         } catch (final Exception ex) {
