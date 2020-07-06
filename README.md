@@ -75,7 +75,7 @@ java -cp target/classes/ himekuri.App
 日めくりの数え番号：1.0.1
 ```
 
-### 1.0.7
+### v1.0.7
 
 ```markdown
 2020年07月06日14時36分46秒：月曜日
@@ -84,7 +84,7 @@ java -cp target/classes/ himekuri.App
 日めくりの数え番号：1.0.2
 ```
 
-### GitHub head
+### GitHub_head
 
 ```markdown
 2020年07月06日14時54分20秒：月曜日
@@ -114,7 +114,7 @@ java -jar himekuri_java.jar
 java -jar himekuri_java-1.0-SNAPSHOT.jar
 ```
 
-### GitHub Package からダウンロード
+### GitHub Package ダウンロード
 
 ```markdown
 himekuri_java-1.0-20200215.101152-2.jar
@@ -124,4 +124,4 @@ cd ダウンロード先
 java -jar himekuri_java-1.0-20200215.101152-2.jar
 ```
 
-### バージョン毎に出力結果でした。
+### 日めくりのJava版出力結果
