@@ -2,7 +2,7 @@
 
 ![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)![GitHub release](https://img.shields.io/github/release/takkii/himekuri_java.svg?style=flat)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/himekuri_java.svg?style=flat)](GitHub)
 
-**Java版、日めくり。**
+_日めくりのJava版出力結果_
 
 ### mvn対応 (v1.0.4)
 
@@ -123,5 +123,3 @@ cd ダウンロード先
 
 java -jar himekuri_java-1.0-20200215.101152-2.jar
 ```
-
-### 日めくりのJava版出力結果
