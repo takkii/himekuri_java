@@ -118,7 +118,7 @@ class Seel extends Thread {
 /**
  * @author takkii(Takayuki Kamiyama) App is SuperClass. mvn build.
  */
-public class App {
+public class HimekuriJava {
     public static void main(final String[] args) {
 
         // SubClass call
