@@ -2,7 +2,7 @@
 
 ![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)![GitHub release](https://img.shields.io/github/release/takkii/himekuri_java.svg?style=flat)[![GitHub Status](https://img.shields.io/github/last-commit/takkii/himekuri_java.svg?style=flat)](GitHub)
 
-**Java版、日めくり。**
+_日めくりのJava版出力結果_
 
 ### mvn対応 (v1.0.4)
 
@@ -75,12 +75,21 @@ java -cp target/classes/ himekuri.App
 日めくりの数え番号：1.0.1
 ```
 
-### GitHub_Head
+### v1.0.7
 
 ```markdown
-2020年04月27日18時34分05秒：月曜日
-来年の1月1日まであと：248日です。
-令和2年04月27日：R2.04.27
+2020年07月06日14時36分46秒：月曜日
+来年の1月1日まであと：178日です。
+令和2年07月06日：R2.07.06
+日めくりの数え番号：1.0.2
+```
+
+### GitHub_head
+
+```markdown
+2020年07月06日14時54分20秒：月曜日
+来年の1月1日まであと：178日です。
+令和2年07月06日：R2.07.06
 日めくりの数え番号：1.0.2
 ```
 
@@ -105,7 +114,7 @@ java -jar himekuri_java.jar
 java -jar himekuri_java-1.0-SNAPSHOT.jar
 ```
 
-### GitHub Package からダウンロード
+### GitHub Package ダウンロード
 
 ```markdown
 himekuri_java-1.0-20200215.101152-2.jar
@@ -114,5 +123,3 @@ cd ダウンロード先
 
 java -jar himekuri_java-1.0-20200215.101152-2.jar
 ```
-
-### バージョン毎に出力結果でした。
