@@ -53,9 +53,9 @@ class Tool extends Thread {
             final Tool thread = new Tool();
             thread.start();
 
-            final String version = "1.0.2";
-            final String himekuriVersion = "日めくりの数え番号：" + version;
-            System.out.println(himekuriVersion);
+            final String version = "1.0.3R1";
+            final String himekuriVersion = "日めくりの数え番号：";
+            System.out.println(himekuriVersion + version);
 
             thread.join();
         } catch (final Exception ex) {
