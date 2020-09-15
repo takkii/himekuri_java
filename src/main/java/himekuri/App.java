@@ -79,18 +79,18 @@ class Hizuke extends Thread {
     }
 }
 
-
 // Seel is SubClass
 class Seel extends Thread {
-    final String version = "1.0.2";
-    final String himekuriVersion = "日めくりの数え番号：" + version;
+    final String RiviSionNumber = "1.0.3R1";
+    final String himekuriVersion = "日めくりの数え番号：";
+    final String version = himekuriVersion + RiviSionNumber;
 
     public void himekuri() {
         try {
             final Seel thread = new Seel();
             thread.start();
 
-            System.out.println(himekuriVersion);
+            System.out.println(version);
 
             thread.join();
         } catch (final Exception ex) {
