@@ -123,7 +123,7 @@ public class App {
             // SubClass call
             final Seel objc = new Seel();
             objc.himekuri();
-        } catch (final DateTimeException abc){
+        } catch (final DateTimeException abc) {
             abc.printStackTrace(System.out);
         }
     }
