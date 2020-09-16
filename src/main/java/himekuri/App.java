@@ -4,6 +4,7 @@
 package himekuri;
 
 import java.text.SimpleDateFormat;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -106,20 +107,24 @@ class Seel extends Thread {
 public class App {
     public static void main(final String[] args) {
 
-        // SubClass call
-        final Ruco c = new Ruco();
-        c.himekuri();
+        try {
+            // SubClass call
+            final Ruco c = new Ruco();
+            c.himekuri();
 
-        // SubClass call
-        final Hizuke rubim = new Hizuke();
-        rubim.Hizuke_counter();
+            // SubClass call
+            final Hizuke rubim = new Hizuke();
+            rubim.Hizuke_counter();
 
-        // SubClass call
-        final Counter swift = new Counter();
-        swift.Reiwa_Counter();
+            // SubClass call
+            final Counter swift = new Counter();
+            swift.Reiwa_Counter();
 
-        // SubClass call
-        final Seel objc = new Seel();
-        objc.himekuri();
+            // SubClass call
+            final Seel objc = new Seel();
+            objc.himekuri();
+        } catch (final DateTimeException abc){
+            abc.printStackTrace(System.out);
+        }
     }
 }
