@@ -53,7 +53,7 @@ class Tool extends Thread {
             final Tool thread = new Tool();
             thread.start();
 
-            final String version = "1.0.3R1";
+            final String version = "1.1.0";
             final String himekuriVersion = "日めくりの数え番号：";
             System.out.println(himekuriVersion + version);
 

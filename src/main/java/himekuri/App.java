@@ -82,7 +82,7 @@ class Hizuke extends Thread {
 
 // Seel is SubClass
 class Seel extends Thread {
-    final String RiviSionNumber = "1.0.3R1";
+    final String RiviSionNumber = "1.1.0";
     final String himekuriVersion = "日めくりの数え番号：";
     final String version = himekuriVersion + RiviSionNumber;
 
