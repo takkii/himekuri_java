@@ -13,7 +13,7 @@ import java.util.Calendar;
 // Ruco is SubClass.
 class Ruco extends Thread {
 
-    final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒：EEEE");
+    final SimpleDateFormat sdf_koyomi = new SimpleDateFormat("yyyy年MM月dd日 : HH時mm分ss秒 : EEEE");
     final Calendar cal = Calendar.getInstance();
 
     public void himekuri() {
