@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
@@ -42,6 +43,8 @@ class Counter extends Thread {
     final String reiwa_alpha = "R";
     final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
     final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
+    final Month hugetu = d.getMonth();
+    final String hugetu_wa = String.valueOf(hugetu);
 
     public void Reiwa_Counter() {
         try {
@@ -49,7 +52,53 @@ class Counter extends Thread {
 
             thread.start();
 
-            System.out.println(reiwa_beta + "：" + reiwa_delta);
+            System.out.print(reiwa_beta + "：" + reiwa_delta + "：");
+
+            switch (hugetu_wa) {
+                case "January":
+                    System.out.println("睦月");
+                    break;
+                case "February":
+                    System.out.println("如月");
+                    break;
+                case "March":
+                    System.out.println("弥生");
+                    break;
+                case "April":
+                    System.out.println("卯月");
+                    break;
+                case "May":
+                    System.out.println("皐月");
+                    break;
+                case "JUNE":
+                    System.out.println("水無月");
+                    break;
+                case "July":
+                    System.out.println("文月");
+                    break;
+                case "August":
+                    System.out.println("葉月");
+                    break;
+                case "September":
+                    System.out.println("長月");
+                    break;
+                case "October":
+                    System.out.println("神無月");
+                    break;
+                case "November":
+                    System.out.println("霜月");
+                    break;
+                case "December":
+                    System.out.println("師走");
+                    break;
+                default:
+                    try {
+                        throw new Exception();
+                    } catch (Exception e) {
+                        System.out.println("到達すべき場所ではないため、例外を発生させました。");
+                    }
+                    break;
+            }
             thread.join();
 
         } catch (final Exception ee) {
