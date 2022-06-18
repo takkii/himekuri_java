@@ -23,36 +23,10 @@ class Ruco extends Thread {
             thread.setDaemon(true);
             thread.start();
 
-            System.out.println(sdf_koyomi.format(cal.getTime()));
+            System.out.print(sdf_koyomi.format(cal.getTime())+" : ");
 
-            thread.join();
-
-        } catch (final Exception e) {
-            System.err.println("Exceptionエラーを捕捉しました...");
-            e.printStackTrace(System.out);
-        }
-    }
-}
-
-class Counter extends Thread {
-    final LocalDateTime d = LocalDateTime.now();
-    final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
-    final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
-    final Calendar cal = Calendar.getInstance();
-    final String reiwa_kanji = "令和";
-    final String reiwa_alpha = "R";
-    final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
-    final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
-    final Month hugetu = d.getMonth();
-    final String hugetu_wa = String.valueOf(hugetu);
-
-    public void Reiwa_Counter() {
-        try {
-            final Counter thread = new Counter();
-
-            thread.start();
-
-            System.out.print(reiwa_beta + "：" + reiwa_delta + "：");
+            final Month hugetu = LocalDateTime.now().getMonth();
+            final String hugetu_wa = String.valueOf(hugetu);
 
             switch (hugetu_wa) {
                 case "January":
@@ -101,6 +75,33 @@ class Counter extends Thread {
             }
             thread.join();
 
+        } catch (final Exception e) {
+            System.err.println("Exceptionエラーを捕捉しました...");
+            e.printStackTrace(System.out);
+        }
+    }
+}
+
+class Counter extends Thread {
+    final LocalDateTime d = LocalDateTime.now();
+    final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
+    final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
+    final Calendar cal = Calendar.getInstance();
+    final String reiwa_kanji = "令和";
+    final String reiwa_alpha = "R";
+    final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
+    final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
+
+    public void Reiwa_Counter() {
+        try {
+            final Counter thread = new Counter();
+
+            thread.start();
+
+            System.out.println(reiwa_beta + "：" + reiwa_delta);
+
+            thread.join();
+
         } catch (final Exception ee) {
             System.err.println("Exceptionエラーを捕捉しました...");
             ee.printStackTrace(System.out);
@@ -131,7 +132,7 @@ class Hizuke extends Thread {
 
 // Seel is SubClass
 class Seel extends Thread {
-    final String RiviSionNumber = "1.1.1";
+    final String RiviSionNumber = "1.1.2";
     final String himekuriVersion = "日めくりの数え番号：";
     final String version = himekuriVersion + RiviSionNumber;
 
