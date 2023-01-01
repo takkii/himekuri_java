@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
+import java.lang.Runtime;
 
 // Ruco is SubClass.
 class Ruco extends Thread {
@@ -38,10 +39,17 @@ class Counter extends Thread {
     final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
     final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
     final Calendar cal = Calendar.getInstance();
+    final int calc = d.getYear() - 2018;
+    final String nengo_calc = sdf_nengo.format(cal.getTime());
+    final String kigo_calc = sdf_kigo.format(cal.getTime());
     final String reiwa_kanji = "令和";
+    final String reiwa_kanji_zero = "令和0";
     final String reiwa_alpha = "R";
-    final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
-    final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
+    final String reiwa_alpha_zero = "R0";
+    final String reiwa_beta = (reiwa_kanji + (calc)) + (nengo_calc);
+    final String reiwa_delta = (reiwa_alpha + (calc)) + (kigo_calc);
+    final String reiwa_beta_zero = (reiwa_kanji_zero + (calc)) + (nengo_calc);
+    final String reiwa_delta_zero = (reiwa_alpha_zero + (calc)) + (kigo_calc);
 
     public void Reiwa_Counter() {
         try {
@@ -49,8 +57,13 @@ class Counter extends Thread {
 
             thread.start();
 
-            System.out.println(reiwa_beta + "：" + reiwa_delta);
-            thread.join();
+            if(calc < 10){
+                System.out.println(reiwa_beta_zero + "：" + reiwa_delta_zero);
+                thread.join();
+            } else {
+                System.out.println(reiwa_beta + "：" + reiwa_delta);
+                thread.join();
+            }
 
         } catch (final Exception ee) {
             System.err.println("Exceptionエラーを捕捉しました...");
@@ -82,7 +95,7 @@ class Hizuke extends Thread {
 
 // Seel is SubClass
 class Seel extends Thread {
-    final String RiviSionNumber = "1.1.0";
+    final String RiviSionNumber = "2023.1.1";
     final String himekuriVersion = "日めくりの数え番号：";
     final String version = himekuriVersion + RiviSionNumber;
 
@@ -125,6 +138,9 @@ public class App {
             objc.himekuri();
         } catch (final DateTimeException abc) {
             abc.printStackTrace(System.out);
+        } finally {
+            Runtime run = Runtime.getRuntime();
+            run.gc();
         }
     }
 }
