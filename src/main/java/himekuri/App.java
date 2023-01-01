@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
+import java.lang.Runtime;
 
 // Ruco is SubClass.
 class Ruco extends Thread {
@@ -182,6 +183,9 @@ public class App {
             objc.himekuri();
         } catch (final DateTimeException abc) {
             abc.printStackTrace(System.out);
+        } finally {
+            Runtime run = Runtime.getRuntime();
+            run.gc();
         }
     }
 }

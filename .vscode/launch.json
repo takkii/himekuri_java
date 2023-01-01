@@ -6,23 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "himekuri.App",
             "projectName": "himekuri_java"
-        },
-        {
-            "type": "java",
-            "name": "Attach",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": "<debug port of the debuggee>"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
         }
     ]
 }
