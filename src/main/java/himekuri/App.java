@@ -103,13 +103,15 @@ class Counter extends Thread {
     public void Reiwa_Counter() {
         try {
             final Counter thread = new Counter();
-
             thread.start();
 
-            System.out.println(reiwa_beta + "：" + reiwa_delta);
+            if (calc < 10){
+                System.out.println(reiwa_beta_zero + "：" + reiwa_delta_zero);
+            } else {
+                System.out.println(reiwa_beta + "：" + reiwa_delta);
+            }
 
             thread.join();
-
         } catch (final Exception ee) {
             System.err.println("Exceptionエラーを捕捉しました...");
             ee.printStackTrace(System.out);
