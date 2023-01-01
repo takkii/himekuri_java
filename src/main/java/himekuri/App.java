@@ -29,40 +29,40 @@ class Ruco extends Thread {
             final String hugetu_wa = String.valueOf(hugetu);
 
             switch (hugetu_wa) {
-                case "January":
+                case "JANUARY":
                     System.out.println("睦月");
                     break;
-                case "February":
+                case "FEBRUARY":
                     System.out.println("如月");
                     break;
-                case "March":
+                case "MARCH":
                     System.out.println("弥生");
                     break;
-                case "April":
+                case "APRIL":
                     System.out.println("卯月");
                     break;
-                case "May":
+                case "MAY":
                     System.out.println("皐月");
                     break;
                 case "JUNE":
                     System.out.println("水無月");
                     break;
-                case "July":
+                case "JULY":
                     System.out.println("文月");
                     break;
-                case "August":
+                case "AUGUST":
                     System.out.println("葉月");
                     break;
-                case "September":
+                case "SEPTEMBER":
                     System.out.println("長月");
                     break;
-                case "October":
+                case "OCTOBER":
                     System.out.println("神無月");
                     break;
-                case "November":
+                case "NOVEMBER":
                     System.out.println("霜月");
                     break;
-                case "December":
+                case "DECEMBER":
                     System.out.println("師走");
                     break;
                 default:
@@ -87,10 +87,17 @@ class Counter extends Thread {
     final SimpleDateFormat sdf_nengo = new SimpleDateFormat("年MM月dd日");
     final SimpleDateFormat sdf_kigo = new SimpleDateFormat(".MM.dd");
     final Calendar cal = Calendar.getInstance();
+    final int calc = d.getYear() - 2018;
+    final String nengo_calc = sdf_nengo.format(cal.getTime());
+    final String kigo_calc = sdf_kigo.format(cal.getTime());
     final String reiwa_kanji = "令和";
+    final String reiwa_kanji_zero = "令和0";
     final String reiwa_alpha = "R";
-    final String reiwa_beta = (reiwa_kanji + (d.getYear() - 2018)) + (sdf_nengo.format(cal.getTime()));
-    final String reiwa_delta = (reiwa_alpha + (d.getYear() - 2018)) + (sdf_kigo.format(cal.getTime()));
+    final String reiwa_alpha_zero = "R0";
+    final String reiwa_beta = (reiwa_kanji + (calc)) + (nengo_calc);
+    final String reiwa_delta = (reiwa_alpha + (calc)) + (kigo_calc);
+    final String reiwa_beta_zero = (reiwa_kanji_zero + (calc)) + (nengo_calc);
+    final String reiwa_delta_zero = (reiwa_alpha_zero + (calc)) + (kigo_calc);
 
     public void Reiwa_Counter() {
         try {
@@ -132,7 +139,7 @@ class Hizuke extends Thread {
 
 // Seel is SubClass
 class Seel extends Thread {
-    final String RiviSionNumber = "1.1.2";
+    final String RiviSionNumber = "2023.1.1";
     final String himekuriVersion = "日めくりの数え番号：";
     final String version = himekuriVersion + RiviSionNumber;
 
